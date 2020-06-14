@@ -7,7 +7,7 @@ import {
   ImageTag,
   NameTag,
   ProfessionTag,
-  MessageText,
+  TechStackInfo,
   BoldText,
   SkillTag,
 } from './card.styles';
@@ -26,7 +26,7 @@ const Card = ({ profileInfo }) => {
             {profileInfo.name.first} {profileInfo.name.last}
           </NameTag>
           <ProfessionTag> {profession.designation} </ProfessionTag>
-          <MessageText>
+          <TechStackInfo>
             <BoldText>Skills</BoldText> :{' '}
             {profession.skills.map((element) => {
               const randomStackColor =
@@ -40,7 +40,7 @@ const Card = ({ profileInfo }) => {
                 </SkillTag>
               );
             })}
-          </MessageText>
+          </TechStackInfo>
         </CardText>
       </CardContent>
     </CardContainer>

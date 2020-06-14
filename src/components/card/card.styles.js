@@ -5,7 +5,7 @@ export const CardContainer = styled.div`
   .shadow-lg;
   .rounded-lg;
   .mx-4;
-  .md:mx-auto;
+  .mx-auto;
   .my-4;
   .max-w-md;
   .md:max-w-3xl;
@@ -13,10 +13,12 @@ export const CardContainer = styled.div`
 `;
 
 export const CardContent = styled.div`
-  .flex;
-  .items-start;
   .px-8;
   .py-6;
+  .max-w-sm;
+  .w-full;
+  .md:max-w-full;
+  .md:flex;
 `;
 
 export const ImageTag = styled.img`
@@ -27,7 +29,7 @@ export const ImageTag = styled.img`
   .mr-5;
   .my-auto;
   .shadow;
-`
+`;
 
 export const NameTag = styled.h2`
   .text-xl;
@@ -43,10 +45,10 @@ export const ProfessionTag = styled.p`
 `;
 
 export const CardText = styled.div`
-  .text-left;
+  .lg:text-left;
 `;
 
-export const MessageText = styled.div`
+export const TechStackInfo = styled.div`
   .mt-3;
   .text-gray-700;
   .text-sm;
@@ -68,5 +70,6 @@ export const SkillTag = styled.span`
   .text-xs;
   .font-bold;
   .mr-3;
+  .mt-2;
   background-color: ${props => props.color};
 `;

@@ -7,12 +7,18 @@ export const AppContainer = styled.div`
 export const PageTitle = styled.h2`
   .m-12;
   .text-gray-300;
-  .text-6xl;
+  .text-5xl;
+  .lg:text-6xl;
 `;
 
 export const LogoContainer = styled.div`
-  .absolute;
-  .top-0;
-  .m-6;
+  .m-4;
   .object-left-top;
+  .lg:absolute;
+  .lg:top-0;
+  .lg:m-6;
+`;
+
+export const ImageTag = styled.img`
+  .lg:w-16;
 `;

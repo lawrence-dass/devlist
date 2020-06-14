@@ -4,7 +4,7 @@ import { LoaderContainer, LoadingText } from './loader.styles';
 
 const Loader = () => (
   <LoaderContainer>
-    <LoadingText> Loading More... </LoadingText>
+    <LoadingText> Loading... </LoadingText>
   </LoaderContainer>
 );
 
