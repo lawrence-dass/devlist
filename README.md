@@ -3,6 +3,7 @@
 Simple listing component with infinite scrolling with react using demo API, bootstrapped with CRA. Styling and made responsive with combination tailwindcss and styled-wind library.
 
 Click [here](https://elated-murdock-7486e9.netlify.app/) for live site.
+Click [here](https://codesandbox.io/s/github/Lawrence4code/devlist/) for codesandbox.
 
 ## Technologies and Library used in the project.
 

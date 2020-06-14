@@ -13,9 +13,7 @@ const List = () => {
       fetch(`https://randomuser.me/api/?${page}=3&results=10`)
         .then((response) => response.json())
         .then((res) => {
-          setListItems((prevList) => {
-            return [...prevList, ...res.results];
-          });
+          setListItems((prevList) => [...prevList, ...res.results]);
         })
         .catch((err) => {
           console.log(err);
@@ -36,9 +34,9 @@ const List = () => {
       hasMore={true}
       loader={<Loader />}
     >
-      {listItems.map((element) => {
-        return <Card key={element.login.uuid} profileInfo={element} />;
-      })}
+      {listItems.map((element) => (
+        <Card key={element.login.uuid} profileInfo={element} />
+      ))}
     </InfiniteScroll>
   );
 };
