@@ -34,7 +34,7 @@ const List = () => {
       dataLength={listItems.length}
       next={fetchMoreData}
       hasMore={true}
-      loader={<Loader/>}
+      loader={<Loader />}
     >
       {listItems.map((element) => {
         return <Card key={element.login.uuid} profileInfo={element} />;
