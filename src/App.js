@@ -1,29 +1,18 @@
 import React from 'react';
-import styled from 'styled-wind';
 
-import Card from './components/card/card.component';
+import Devicon from './assets/dev-icon.png';
+import List from './components/list/list.component';
 
-import devlist from './testdata';
-
-const AppContainer = styled.div`
-  .mb-24;
-`;
-
-const PageTitle = styled.h2`
-  .m-12;
-  .text-gray-400;
-  .text-6xl;
-`;
+import { AppContainer, LogoContainer, PageTitle } from './App.styles';
 
 function App() {
   return (
     <AppContainer>
+      <LogoContainer>
+        <img src={Devicon} width="50px" alt="DevIcon" />
+      </LogoContainer>
       <PageTitle> ~ Developer List ~ </PageTitle>
-      {
-        devlist.map((element) => {
-          return <Card key={element.login.uuid} profileInfo={element} />
-        })
-      }
+      <List />
     </AppContainer>
   );
 }

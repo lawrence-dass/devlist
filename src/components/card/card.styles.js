@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
   .md:mx-auto;
   .my-4;
   .max-w-md;
-  .md:max-w-2xl;
+  .md:max-w-3xl;
   background-color: whitesmoke;
 `;
 
